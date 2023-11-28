@@ -1,0 +1,10 @@
+box<-c(9,25,23,12,11,6,7,8,9,10)
+mean(box)
+[1] 12
+ median(box)
+[1] 9.5
+x<-unique(box)
+mod=x[which.max(tabulate(match(box,x)))]
+print(mod)
+[1] 9
+
