@@ -1,0 +1,16 @@
+z-score normalization
+x<-c(200,300,400,600,1000)
+ m<-mean(x)
+ s<-sd(x)
+ x.z<-(x-m)/s
+ print(x.z)
+[1] -0.9486833 -0.6324555 -0.3162278  0.3162278  1.5811388
+min-max normalizatiion
+x<-c(200,300,400,600,1000)
+newmax=1
+newmin=0
+for(i in x)
+{
+v=(i-min(x))/(max(x)-min(x))*(newmax-newmin)
+print(paste("the normalization of",i,"is",v))
+}
