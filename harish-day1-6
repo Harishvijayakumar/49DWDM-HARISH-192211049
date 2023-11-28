@@ -1,0 +1,28 @@
+ age<-c(23,23,27,27,39,41,47,49,50,52,54,54,56,57,58,60,61)
+> newmax=1
+> newmin=0
+> for(i in age)
++ {
++  v=(i-min(age))/(max(age)-min(age))*(newmax-newmin)
++ print(paste("the normalization of",i,"is",v))
++ }
+[1] "the normalization of 23 is 0"
+[1] "the normalization of 23 is 0"
+[1] "the normalization of 27 is 0.105263157894737"
+[1] "the normalization of 27 is 0.105263157894737"
+[1] "the normalization of 39 is 0.421052631578947"
+[1] "the normalization of 41 is 0.473684210526316"
+[1] "the normalization of 47 is 0.631578947368421"
+[1] "the normalization of 49 is 0.684210526315789"
+[1] "the normalization of 50 is 0.710526315789474"
+[1] "the normalization of 52 is 0.763157894736842"
+[1] "the normalization of 54 is 0.815789473684211"
+[1] "the normalization of 54 is 0.815789473684211"
+[1] "the normalization of 56 is 0.868421052631579"
+[1] "the normalization of 57 is 0.894736842105263"
+[1] "the normalization of 58 is 0.921052631578947"
+[1] "the normalization of 60 is 0.973684210526316"
+[1] "the normalization of 61 is 1"
+
+
+
